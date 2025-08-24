@@ -85,7 +85,7 @@ def get_appointment_count_today():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return jsonify({"message": "API is running"})
 
 @app.route('/book-appointment', methods=['POST'])
 def book_appointment():
